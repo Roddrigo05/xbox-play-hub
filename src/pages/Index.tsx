@@ -27,6 +27,8 @@ import xboxVR from '@/assets/xbox-vr.jpg';
 import gameFantasy from '@/assets/game-fantasy.jpg';
 import gameRacing from '@/assets/game-racing.jpg';
 import gameShooter from '@/assets/game-shooter.jpg';
+import xboxHeadset from '@/assets/xbox-headset.jpg';
+import xboxSeriesZ from '@/assets/xbox-series-z.jpg';
 
 const Index = () => {
   const scrollToSection = (sectionId: string) => {
@@ -89,8 +91,8 @@ const Index = () => {
             <p className="text-xl text-muted-foreground">Centenas de jogos de alta qualidade para PC e consola</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <Card className="group transition-all duration-300 hover:shadow-hover hover:scale-105 bg-gradient-card border-border">
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <Card className="group transition-all duration-300 hover:shadow-hover hover:scale-105 bg-gradient-card border-border hover-lift">
               <CardHeader>
                 <div className="flex items-center space-x-3">
                   <div className="p-2 bg-primary rounded-lg">
@@ -105,14 +107,14 @@ const Index = () => {
                 </p>
                 <div className="flex items-center justify-between">
                   <span className="text-2xl font-bold text-primary">€12.99/mês</span>
-                  <Button className="bg-primary hover:bg-primary-hover transition-colors">
+                  <Button className="bg-primary hover:bg-primary-hover transition-all duration-300 hover:shadow-glow hover-lift">
                     Subscrever
                   </Button>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="group transition-all duration-300 hover:shadow-hover hover:scale-105 bg-gradient-card border-border">
+            <Card className="group transition-all duration-300 hover:shadow-hover hover:scale-105 bg-gradient-card border-border hover-lift">
               <CardHeader>
                 <div className="flex items-center space-x-3">
                   <div className="p-2 bg-primary rounded-lg">
@@ -127,7 +129,29 @@ const Index = () => {
                 </p>
                 <div className="flex items-center justify-between">
                   <span className="text-2xl font-bold text-primary">€9.99/mês</span>
-                  <Button className="bg-primary hover:bg-primary-hover transition-colors">
+                  <Button className="bg-primary hover:bg-primary-hover transition-all duration-300 hover:shadow-glow hover-lift">
+                    Subscrever
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="group transition-all duration-300 hover:shadow-hover hover:scale-105 bg-gradient-card border-border hover-lift">
+              <CardHeader>
+                <div className="flex items-center space-x-3">
+                  <div className="p-2 bg-accent rounded-lg">
+                    <Zap className="h-6 w-6 text-black" />
+                  </div>
+                  <CardTitle className="text-xl">Game Pass Core</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-4">
+                  Acesso básico a uma seleção de jogos populares com multijogador online incluído.
+                </p>
+                <div className="flex items-center justify-between">
+                  <span className="text-2xl font-bold text-primary">€6.99/mês</span>
+                  <Button className="bg-primary hover:bg-primary-hover transition-all duration-300 hover:shadow-glow hover-lift">
                     Subscrever
                   </Button>
                 </div>
@@ -165,8 +189,8 @@ const Index = () => {
             <p className="text-xl text-muted-foreground">Escolhe a consola perfeita para ti</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <Card className="group transition-all duration-300 hover:shadow-hover hover:scale-105 bg-gradient-card border-border overflow-hidden">
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <Card className="group transition-all duration-300 hover:shadow-hover hover:scale-105 bg-gradient-card border-border overflow-hidden hover-lift">
               <div className="relative">
                 <img 
                   src={xboxSeriesX} 
@@ -184,14 +208,14 @@ const Index = () => {
                 </p>
                 <div className="flex items-center justify-between">
                   <span className="text-3xl font-bold text-primary">€499</span>
-                  <Button className="bg-primary hover:bg-primary-hover transition-colors">
+                  <Button className="bg-primary hover:bg-primary-hover transition-all duration-300 hover:shadow-glow hover-lift">
                     Comprar Agora
                   </Button>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="group transition-all duration-300 hover:shadow-hover hover:scale-105 bg-gradient-card border-border overflow-hidden">
+            <Card className="group transition-all duration-300 hover:shadow-hover hover:scale-105 bg-gradient-card border-border overflow-hidden hover-lift">
               <div className="relative">
                 <img 
                   src={xboxSeriesS} 
@@ -209,10 +233,119 @@ const Index = () => {
                 </p>
                 <div className="flex items-center justify-between">
                   <span className="text-3xl font-bold text-primary">€299</span>
-                  <Button className="bg-primary hover:bg-primary-hover transition-colors">
+                  <Button className="bg-primary hover:bg-primary-hover transition-all duration-300 hover:shadow-glow hover-lift">
                     Comprar Agora
                   </Button>
                 </div>
+              </CardContent>
+            </Card>
+
+            <Card className="group transition-all duration-300 hover:shadow-hover hover:scale-105 bg-gradient-card border-border overflow-hidden hover-lift">
+              <div className="relative">
+                <img 
+                  src={xboxSeriesZ} 
+                  alt="Xbox Series Z" 
+                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <Badge className="absolute top-4 right-4 bg-secondary text-white">
+                  Compacta
+                </Badge>
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-2xl font-bold mb-2">Xbox Series Z</h3>
+                <p className="text-muted-foreground mb-4">
+                  Design ultra-compacto e portátil. Performance otimizada para jogos em movimento.
+                </p>
+                <div className="flex items-center justify-between">
+                  <span className="text-3xl font-bold text-primary">€199</span>
+                  <Button className="bg-primary hover:bg-primary-hover transition-all duration-300 hover:shadow-glow hover-lift">
+                    Comprar Agora
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Novos Lançamentos */}
+      <section id="novos-lancamentos" className="py-16 bg-card">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4">Novos Lançamentos</h2>
+            <p className="text-xl text-muted-foreground">Os jogos mais recentes disponíveis agora</p>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-4 max-w-5xl mx-auto">
+            <Card className="group transition-all duration-300 hover:shadow-hover hover:scale-105 bg-gradient-card border-border overflow-hidden hover-lift">
+              <div className="relative">
+                <img 
+                  src={gameFantasy} 
+                  alt="Novo Jogo 1" 
+                  className="w-full h-32 object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <Badge className="absolute top-2 right-2 bg-accent text-black text-xs">
+                  Novo
+                </Badge>
+              </div>
+              <CardContent className="p-3">
+                <h4 className="font-semibold text-sm mb-1">Mundo Perdido</h4>
+                <p className="text-xs text-muted-foreground mb-2">RPG de aventura épica</p>
+                <span className="text-sm font-bold text-primary">€59.99</span>
+              </CardContent>
+            </Card>
+
+            <Card className="group transition-all duration-300 hover:shadow-hover hover:scale-105 bg-gradient-card border-border overflow-hidden hover-lift">
+              <div className="relative">
+                <img 
+                  src={gameRacing} 
+                  alt="Novo Jogo 2" 
+                  className="w-full h-32 object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <Badge className="absolute top-2 right-2 bg-accent text-black text-xs">
+                  Novo
+                </Badge>
+              </div>
+              <CardContent className="p-3">
+                <h4 className="font-semibold text-sm mb-1">Turbo Rush</h4>
+                <p className="text-xs text-muted-foreground mb-2">Corridas futuristas</p>
+                <span className="text-sm font-bold text-primary">€49.99</span>
+              </CardContent>
+            </Card>
+
+            <Card className="group transition-all duration-300 hover:shadow-hover hover:scale-105 bg-gradient-card border-border overflow-hidden hover-lift">
+              <div className="relative">
+                <img 
+                  src={gameShooter} 
+                  alt="Novo Jogo 3" 
+                  className="w-full h-32 object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <Badge className="absolute top-2 right-2 bg-accent text-black text-xs">
+                  Novo
+                </Badge>
+              </div>
+              <CardContent className="p-3">
+                <h4 className="font-semibold text-sm mb-1">Combat Zone</h4>
+                <p className="text-xs text-muted-foreground mb-2">Ação militar intensa</p>
+                <span className="text-sm font-bold text-primary">€54.99</span>
+              </CardContent>
+            </Card>
+
+            <Card className="group transition-all duration-300 hover:shadow-hover hover:scale-105 bg-gradient-card border-border overflow-hidden hover-lift">
+              <div className="relative">
+                <img 
+                  src={gameFantasy} 
+                  alt="Novo Jogo 4" 
+                  className="w-full h-32 object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <Badge className="absolute top-2 right-2 bg-accent text-black text-xs">
+                  Novo
+                </Badge>
+              </div>
+              <CardContent className="p-3">
+                <h4 className="font-semibold text-sm mb-1">Cyber Quest</h4>
+                <p className="text-xs text-muted-foreground mb-2">Sci-Fi e mistério</p>
+                <span className="text-sm font-bold text-primary">€44.99</span>
               </CardContent>
             </Card>
           </div>
@@ -296,9 +429,13 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="group transition-all duration-300 hover:shadow-hover hover:scale-105 bg-gradient-card border-border overflow-hidden">
-              <div className="relative bg-muted flex items-center justify-center h-48">
-                <Headphones className="h-20 w-20 text-primary" />
+            <Card className="group transition-all duration-300 hover:shadow-hover hover:scale-105 bg-gradient-card border-border overflow-hidden hover-lift">
+              <div className="relative">
+                <img 
+                  src={xboxHeadset} 
+                  alt="Headset Wireless Xbox" 
+                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                />
               </div>
               <CardContent className="p-4">
                 <h3 className="text-lg font-semibold mb-2">Headset Wireless</h3>
@@ -307,7 +444,7 @@ const Index = () => {
                 </p>
                 <div className="flex items-center justify-between">
                   <span className="text-xl font-bold text-primary">€99.99</span>
-                  <Button size="sm" className="bg-primary hover:bg-primary-hover transition-colors">
+                  <Button size="sm" className="bg-primary hover:bg-primary-hover transition-all duration-300 hover:shadow-glow hover-lift">
                     Comprar
                   </Button>
                 </div>
@@ -363,6 +500,27 @@ const Index = () => {
                 <li><a href="#" className="hover:text-primary transition-colors">Feedback</a></li>
                 <li><a href="#" className="hover:text-primary transition-colors">Normas da Comunidade</a></li>
                 <li><a href="#" className="hover:text-primary transition-colors">Aviso de Fotossensibilidade</a></li>
+              </ul>
+              
+              <h4 className="text-md font-semibold mb-3 mt-6">Redes Sociais</h4>
+              <div className="flex space-x-3">
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                  <Globe className="h-5 w-5" />
+                </a>
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                  <Users className="h-5 w-5" />
+                </a>
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                  <Monitor className="h-5 w-5" />
+                </a>
+              </div>
+              <ul className="space-y-1 text-xs text-muted-foreground mt-2">
+                <li><a href="#" className="hover:text-primary transition-colors">Instagram</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">X (Twitter)</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">YouTube</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">Facebook</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">TikTok</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">Gmail</a></li>
               </ul>
             </div>
             
