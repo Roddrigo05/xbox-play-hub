@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
-import { ChevronDown, Search, ShoppingCart, User, Gamepad2 } from 'lucide-react';
+import { ChevronDown, Search, ShoppingCart, User, X } from 'lucide-react';
 
 const Header = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -20,7 +20,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-primary">
-              <Gamepad2 className="h-5 w-5 text-white" />
+              <X className="h-5 w-5 text-white" />
             </div>
             <span className="text-2xl font-bold text-foreground">Xbox</span>
           </div>

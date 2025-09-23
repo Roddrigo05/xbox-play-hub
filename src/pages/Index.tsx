@@ -15,7 +15,14 @@ import {
   ArrowRight,
   Star,
   Users,
-  Globe
+  Globe,
+  Instagram,
+  Twitter,
+  Youtube,
+  Facebook,
+  Mail,
+  Music,
+  X
 } from 'lucide-react';
 
 // Import images
@@ -27,6 +34,8 @@ import xboxVR from '@/assets/xbox-vr.jpg';
 import gameFantasy from '@/assets/game-fantasy.jpg';
 import gameRacing from '@/assets/game-racing.jpg';
 import gameShooter from '@/assets/game-shooter.jpg';
+import gameHorror from '@/assets/game-horror.jpg';
+import gameSports from '@/assets/game-sports.jpg';
 import xboxHeadset from '@/assets/xbox-headset.jpg';
 import xboxSeriesZ from '@/assets/xbox-series-z.jpg';
 
@@ -280,7 +289,7 @@ const Index = () => {
             <Card className="group transition-all duration-300 hover:shadow-hover hover:scale-105 bg-gradient-card border-border overflow-hidden hover-lift">
               <div className="relative">
                 <img 
-                  src={gameFantasy} 
+                  src={gameHorror} 
                   alt="Novo Jogo 1" 
                   className="w-full h-32 object-cover transition-transform duration-300 group-hover:scale-110"
                 />
@@ -289,8 +298,8 @@ const Index = () => {
                 </Badge>
               </div>
               <CardContent className="p-3">
-                <h4 className="font-semibold text-sm mb-1">Mundo Perdido</h4>
-                <p className="text-xs text-muted-foreground mb-2">RPG de aventura épica</p>
+                <h4 className="font-semibold text-sm mb-1">Sombras do Medo</h4>
+                <p className="text-xs text-muted-foreground mb-2">Survival Horror</p>
                 <span className="text-sm font-bold text-primary">€59.99</span>
               </CardContent>
             </Card>
@@ -334,7 +343,7 @@ const Index = () => {
             <Card className="group transition-all duration-300 hover:shadow-hover hover:scale-105 bg-gradient-card border-border overflow-hidden hover-lift">
               <div className="relative">
                 <img 
-                  src={gameFantasy} 
+                  src={gameSports} 
                   alt="Novo Jogo 4" 
                   className="w-full h-32 object-cover transition-transform duration-300 group-hover:scale-110"
                 />
@@ -343,8 +352,8 @@ const Index = () => {
                 </Badge>
               </div>
               <CardContent className="p-3">
-                <h4 className="font-semibold text-sm mb-1">Cyber Quest</h4>
-                <p className="text-xs text-muted-foreground mb-2">Sci-Fi e mistério</p>
+                <h4 className="font-semibold text-sm mb-1">Champions League</h4>
+                <p className="text-xs text-muted-foreground mb-2">Futebol competitivo</p>
                 <span className="text-sm font-bold text-primary">€44.99</span>
               </CardContent>
             </Card>
@@ -357,7 +366,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between mb-12">
             <div>
-              <h2 className="text-4xl font-bold mb-4">Títulos em Destaque</h2>
+              <h2 className="text-4xl font-bold mb-4">Promoções</h2>
               <p className="text-xl text-muted-foreground">Descobre os melhores jogos com preços especiais</p>
             </div>
             
@@ -503,25 +512,26 @@ const Index = () => {
               </ul>
               
               <h4 className="text-md font-semibold mb-3 mt-6">Redes Sociais</h4>
-              <div className="flex space-x-3">
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  <Globe className="h-5 w-5" />
+              <div className="flex space-x-4">
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="Instagram">
+                  <Instagram className="h-5 w-5" />
                 </a>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  <Users className="h-5 w-5" />
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="X (Twitter)">
+                  <Twitter className="h-5 w-5" />
                 </a>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  <Monitor className="h-5 w-5" />
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="YouTube">
+                  <Youtube className="h-5 w-5" />
+                </a>
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="Facebook">
+                  <Facebook className="h-5 w-5" />
+                </a>
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="TikTok">
+                  <Music className="h-5 w-5" />
+                </a>
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="Gmail">
+                  <Mail className="h-5 w-5" />
                 </a>
               </div>
-              <ul className="space-y-1 text-xs text-muted-foreground mt-2">
-                <li><a href="#" className="hover:text-primary transition-colors">Instagram</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">X (Twitter)</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">YouTube</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Facebook</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">TikTok</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Gmail</a></li>
-              </ul>
             </div>
             
             <div>
