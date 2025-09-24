@@ -3,7 +3,6 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Header from '@/components/Header';
 import ChatBot from '@/components/ChatBot';
-import CalWidget from '@/components/CalWidget';
 import GameCard from '@/components/GameCard';
 import { 
   Gamepad2, 
@@ -575,7 +574,6 @@ const Index = () => {
       </footer>
 
       <ChatBot />
-      <CalWidget />
     </div>
   );
 };
