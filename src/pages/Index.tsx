@@ -34,6 +34,8 @@ import xboxVR from '@/assets/xbox-vr.jpg';
 import gameFantasy from '@/assets/game-fantasy.jpg';
 import gameRacing from '@/assets/game-racing.jpg';
 import gameShooter from '@/assets/game-shooter.jpg';
+import gameTactical from '@/assets/game-tactical.jpg';
+import gameVisualNovel from '@/assets/game-visual-novel.jpg';
 import gameHorror from '@/assets/game-horror.jpg';
 import gameSports from '@/assets/game-sports.jpg';
 import xboxHeadset from '@/assets/xbox-headset.jpg';
@@ -354,7 +356,7 @@ const Index = () => {
               <CardContent className="p-3">
                 <h4 className="font-semibold text-sm mb-1">Champions League</h4>
                 <p className="text-xs text-muted-foreground mb-2">Futebol competitivo</p>
-                <span className="text-sm font-bold text-primary">€44.99</span>
+                <span className="text-sm font-bold text-primary">€119.99</span>
               </CardContent>
             </Card>
           </div>
@@ -389,19 +391,19 @@ const Index = () => {
             />
             
             <GameCard
-              image={gameRacing}
-              title="Velocidade Extrema"
-              description="Corridas futuristas nas ruas de cidades cyberpunk com carros personalizáveis."
-              price="€29.99"
-              originalPrice="€49.99"
+              image={gameTactical}
+              title="Guerra Tática"
+              description="Estratégia militar avançada com planeamento tático e posicionamento de unidades."
+              price="€19.99"
+              originalPrice="€39.99"
             />
             
             <GameCard
-              image={gameShooter}
-              title="Operação Especial"
-              description="Ação militar intensa com campanhas emocionantes e multiplayer competitivo."
-              price="€44.99"
-              originalPrice="€69.99"
+              image={gameVisualNovel}
+              title="Corações Perdidos"
+              description="Novela visual romântica com múltiplas escolhas e finais alternativos emocionantes."
+              price="€14.99"
+              originalPrice="€29.99"
             />
           </div>
         </div>
