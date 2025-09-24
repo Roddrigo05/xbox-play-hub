@@ -4,6 +4,7 @@ import { Badge } from '@/components/ui/badge';
 import Header from '@/components/Header';
 import ChatBot from '@/components/ChatBot';
 import GameCard from '@/components/GameCard';
+import CalWidget from '@/components/CalWidget';
 import { 
   Gamepad2, 
   Zap, 
@@ -574,6 +575,7 @@ const Index = () => {
       </footer>
 
       <ChatBot />
+      <CalWidget />
     </div>
   );
 };
