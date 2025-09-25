@@ -2,7 +2,8 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Header from '@/components/Header';
-import ChatBot from '@/components/ChatBot';
+import RetellAI from '@/components/RetellAI';
+import CalWidget from '@/components/CalWidget';
 import GameCard from '@/components/GameCard';
 import { 
   Gamepad2, 
@@ -490,6 +491,19 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Agendar Reunião */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4">Agendar Reunião</h2>
+            <p className="text-xl text-muted-foreground">Marca uma conversa comigo sobre Xbox</p>
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <CalWidget />
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-card border-t border-border py-12">
         <div className="container mx-auto px-4">
@@ -573,7 +587,7 @@ const Index = () => {
         </div>
       </footer>
 
-      <ChatBot />
+      <RetellAI />
     </div>
   );
 };
