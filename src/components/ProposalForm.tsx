@@ -43,8 +43,7 @@ const ProposalForm = () => {
     setIsSubmitting(true);
     
     try {
-      // Webhook URL placeholder - to be replaced with Make.com URL
-      const webhookUrl = 'https://hook.eu2.make.com/your-webhook-url-here';
+      const webhookUrl = 'https://hook.eu2.make.com/tbjupafcccy93xkjjfkxy4c2j290rtec';
       
       const payload = {
         ...data,
@@ -74,8 +73,7 @@ const ProposalForm = () => {
     } catch (error) {
       console.error('Erro ao enviar pedido:', error);
       toast({
-        title: "Erro ao enviar pedido",
-        description: "Tente novamente mais tarde ou contacte-nos diretamente.",
+        title: "Ocorreu um erro. Por favor, tente novamente.",
         variant: "destructive",
         duration: 5000,
       });
