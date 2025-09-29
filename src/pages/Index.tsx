@@ -4,6 +4,7 @@ import { Badge } from '@/components/ui/badge';
 import Header from '@/components/Header';
 import RetellAI from '@/components/RetellAI';
 import CalWidget from '@/components/CalWidget';
+import ProposalForm from '@/components/ProposalForm';
 import GameCard from '@/components/GameCard';
 import { 
   Gamepad2, 
@@ -500,6 +501,21 @@ const Index = () => {
           </div>
           <div className="max-w-4xl mx-auto">
             <CalWidget />
+          </div>
+        </div>
+      </section>
+
+      {/* Pedido de Proposta */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4">Pedido de Proposta</h2>
+            <p className="text-xl text-muted-foreground">
+              Preencha o formulário abaixo e receba a sua proposta personalizada.
+            </p>
+          </div>
+          <div className="max-w-2xl mx-auto">
+            <ProposalForm />
           </div>
         </div>
       </section>
